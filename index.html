@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1762b6"><title>消防设施操作员（中级）理论模拟考试</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="login-page" class="page login-page">
+  <header class="login-header"><div class="header-inner"><span class="crest">✺</span><span>全国消防行业职业技能鉴定在线考试（理论场）</span></div></header>
+  <main class="login-shell">
+    <div class="login-illustration" aria-hidden="true"><div class="art-orbit orbit-a"></div><div class="art-orbit orbit-b"></div><div class="art-paper"><div class="art-title"></div><div class="art-line"></div><div class="art-line short"></div><div class="art-check">✓</div><div class="art-line"></div><div class="art-line short"></div></div><div class="art-circle">✓</div><div class="art-base"></div><div class="art-caption">消防理论知识考试</div></div>
+    <div class="login-side"><form id="login-form" class="login-form"><h1>欢迎登录</h1><p class="login-subtitle">消防设施操作员 · 中级理论模拟考试</p><label for="username">账号</label><input id="username" name="username" placeholder="请输入账号" autocomplete="username" required><label for="password">密码</label><input id="password" name="password" type="password" placeholder="请输入密码" autocomplete="current-password" required><p id="login-error" class="form-error" role="alert"></p><button class="btn btn-blue btn-full" type="submit">登 录</button><p class="login-footnote">模拟考试系统 · 仅供学习使用</p></form></div>
+  </main>
+</section>
+<section id="exam-page" class="page hide">
+  <header class="exam-header"><div class="exam-brand"><span class="crest smaller">✺</span><strong>消防设施操作员（中级）理论模拟考试</strong></div><div class="header-actions"><span id="header-progress">已答 0 / 200</span><button id="logout-btn" class="text-button">退出登录</button></div></header>
+  <div class="exam-layout">
+    <aside class="answer-sidebar panel"><h2>答题卡</h2><div class="answer-scroll" id="answer-cards"></div><div class="legend"><span><i class="legend-dot done"></i>已答</span><span><i class="legend-dot"></i>未答</span></div></aside>
+    <main class="question-panel panel"><div class="paper-top"><div class="breadcrumb">当前位置：模拟考试 &gt; 中级理论 &gt; 正式考试</div><h1>消防设施操作员（中级）理论知识考试</h1><div class="paper-meta">共 200 题 · 每题 0.5 分 · 满分 100 分 · 60 分合格</div></div><div id="question-list"></div><div class="end-paper">— 试卷结束 —</div></main>
+    <aside class="profile-sidebar panel"><div class="avatar" aria-hidden="true">👷🏻‍♂️</div><div class="profile-lines"><p>考试类型：<strong>中级理论</strong></p><p>考试题量：<strong>200 题</strong></p><p>考试状态：<strong id="exam-status">进行中</strong></p><p>已答题数：<strong id="profile-count">0</strong></p><p>剩余题数：<strong id="profile-remain">200</strong></p></div><div class="profile-bottom"><button id="submit-btn" class="btn btn-red">交 卷</button><p>交卷后显示成绩和正确答案</p></div></aside>
+  </div>
+  <div class="mobile-submit"><button id="submit-mobile" class="btn btn-red">交 卷</button></div>
+</section>
+<section id="result-page" class="page hide"><header class="exam-header"><div class="exam-brand"><span class="crest smaller">✺</span><strong>考试成绩</strong></div><button id="result-logout" class="text-button">退出登录</button></header><main class="result-shell"><div class="result-summary panel"><p class="eyebrow">本次模拟考试</p><h1>考试成绩报告</h1><div id="score" class="score"></div><div id="pass-label" class="pass-label"></div><div id="score-details" class="score-details"></div><div class="result-actions"><button id="review-all" class="btn btn-blue">查看全卷解析</button><button id="review-wrong" class="btn btn-outline">只看错题</button><button id="retry-btn" class="btn btn-outline">重新考试</button></div></div><div id="review-list" class="review-list"></div></main></section>
+<div id="modal" class="modal hide" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-card"><h2 id="modal-title">确认交卷？</h2><p id="modal-body"></p><div class="modal-actions"><button id="modal-cancel" class="btn btn-outline">继续答题</button><button id="modal-confirm" class="btn btn-red">确认交卷</button></div></div></div>
+<script src="questions.js"></script><script src="app.js"></script>
+</body></html>
